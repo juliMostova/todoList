@@ -1,0 +1,114 @@
+* {
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Fira sans", sans-serif;
+}
+
+:root {
+	--dark: #374151;
+	--darker: #1F2937;
+	--darkest: #111827;
+	--grey: #6B7280;
+	--pink: #EC4899;
+	--purple: #8B5CF6;
+	--light: #EEE;
+}
+
+body{
+
+    min-height: 100vh;
+    background-image: url(milky-way.jpg);
+	background-size: cover;
+    display: flex;
+    flex-direction: column;
+    color:var(--pink);
+
+}
+.wrapper{
+    margin: 20px auto;
+    width: 700px;
+    min-height: 400px;
+ 
+}
+header{
+    max-width: 800px;
+    width: 100%;
+    margin:  0 auto;
+}
+header h1{
+    padding: 10px;
+    margin:  0 auto;
+
+}
+
+#newTask_input{
+    flex: 1 1 0%;
+	 background-color: var(--darker);  
+    border-radius: 8px;
+    padding: 20px;
+    margin-right: 28px;
+	 color: var(--light);
+	font-size: 1.25rem;
+}
+
+#new-task-submit{
+    color:var(--darkest);
+	font-size: 1.25rem;
+    height: 35px;
+    border-radius: 8px;
+	font-weight: 500;
+	background-image: linear-gradient(to right, var(--pink), var(--purple));
+	cursor: pointer;
+	transition: 0.4s;
+}
+#new-task-submit:hover{
+opacity: 0.7;
+
+}
+main{
+    flex: 1 1 0%;
+	max-width: 800px;
+	width: 50%;
+	margin: 0 auto;   
+    padding-top: 15px;
+}
+#tasks .task{
+display: flex;
+justify-content: space-between;
+padding: 10px;
+margin: 5px;
+width: 150%;
+
+
+}
+
+.task .content {
+	flex: 1 1 0%;
+}
+.task .content .text {
+	color: var(--darker);
+	font-size: 19px;
+	width: 80%;
+    height: 38px;
+	display: block;
+	transition: 0.4s;
+    border-radius: 5px;
+    outline: none;
+}
+.task  button {
+	cursor: pointer;
+	margin: 0 0.5rem;
+	font-size: 1.125rem;
+	font-weight: 500;
+	text-transform: uppercase;
+	transition: 0.4s;
+    background-image: linear-gradient(to right, var(--pink), var(--purple));
+    border-radius: 5px;
+}
+.task  button:hover {
+	opacity: 0.8;
+}
+
+.task button:active {
+	opacity: 0.6;
+}
