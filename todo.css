@@ -72,14 +72,19 @@ main{
 	margin: 0 auto;   
     padding-top: 15px;
 }
+ #tasks{
+position: relative;	
+
+} 
 #tasks .task{
 display: flex;
 justify-content: space-between;
 padding: 10px;
 margin: 5px;
 width: 150%;
+background-color: rgb(102, 108, 108);
 
-
+border-radius: 8px;
 }
 
 .task .content {
@@ -94,9 +99,11 @@ width: 150%;
 	transition: 0.4s;
     border-radius: 5px;
     outline: none;
+	
 }
 .task  button {
 	cursor: pointer;
+	/* width: 40px; */
 	margin: 0 0.5rem;
 	font-size: 1.125rem;
 	font-weight: 500;
@@ -111,4 +118,10 @@ width: 150%;
 
 .task button:active {
 	opacity: 0.6;
+}
+
+.string{
+	text-decoration: line-through;
+	
+
 }
